@@ -3,7 +3,6 @@ from time import time
 from typing import Protocol, runtime_checkable
 
 
-@runtime_checkable
 class SocialChannel(Protocol):
     def post_message(self, message: str) -> None:
         ...
